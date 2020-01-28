@@ -119,6 +119,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:af4f792ad9fd33e21293f4305ac9951cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e7f3245e13691d73f52c0b7caf580f3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="rodbus_8h.html#a7e7f3245e13691d73f52c0b7caf580f3">Handler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a7e7f3245e13691d73f52c0b7caf580f3">Handler</a></td></tr>
 <tr class="separator:a7e7f3245e13691d73f52c0b7caf580f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a4d68429aebf64b1a0686d32a333787"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="rodbus_8h.html#a2a4d68429aebf64b1a0686d32a333787">ServerHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a2a4d68429aebf64b1a0686d32a333787">ServerHandle</a></td></tr>
+<tr class="separator:a2a4d68429aebf64b1a0686d32a333787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a993c841f36546f091efb45eb10bdeb65"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="rodbus_8h.html#a993c841f36546f091efb45eb10bdeb65">Updater</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a993c841f36546f091efb45eb10bdeb65">Updater</a></td></tr>
 <tr class="separator:a993c841f36546f091efb45eb10bdeb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f1b89c3102156804ef750df9ac42d97"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_session.html">Session</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a8f1b89c3102156804ef750df9ac42d97">Session</a></td></tr>
@@ -198,8 +200,8 @@ Functions</h2></td></tr>
 <tr class="separator:a4c5bf17a00e67b15e844462febb25065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a591e5e747665b5920f2479ff7f6af910"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rodbus_8h.html#a7e7f3245e13691d73f52c0b7caf580f3">Handler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a591e5e747665b5920f2479ff7f6af910">create_handler</a> (<a class="el" href="prelude_8h.html#a26be402b6358a7159963c58bfcd5819f">Runtime</a> *runtime, <a class="el" href="struct_sizes.html">Sizes</a> sizes, <a class="el" href="struct_callbacks.html">Callbacks</a> callbacks, void *user_data)</td></tr>
 <tr class="separator:a591e5e747665b5920f2479ff7f6af910"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a543be001101bbaf6a2c028db5fd61210"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a543be001101bbaf6a2c028db5fd61210">create_server</a> (<a class="el" href="prelude_8h.html#a26be402b6358a7159963c58bfcd5819f">Runtime</a> *runtime, const char *address, uint8_t unit_id, <a class="el" href="rodbus_8h.html#a7e7f3245e13691d73f52c0b7caf580f3">Handler</a> *handler)</td></tr>
-<tr class="separator:a543be001101bbaf6a2c028db5fd61210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea9f8ed2895405a6a928d19056bf4561"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rodbus_8h.html#a2a4d68429aebf64b1a0686d32a333787">ServerHandle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#aea9f8ed2895405a6a928d19056bf4561">create_server</a> (<a class="el" href="prelude_8h.html#a26be402b6358a7159963c58bfcd5819f">Runtime</a> *runtime, const char *address, uint8_t unit_id, <a class="el" href="rodbus_8h.html#a7e7f3245e13691d73f52c0b7caf580f3">Handler</a> *handler)</td></tr>
+<tr class="separator:aea9f8ed2895405a6a928d19056bf4561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0265406efea9cf22a481b867bcec06f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_sizes.html">Sizes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a0265406efea9cf22a481b867bcec06f0">create_sizes</a> (uint16_t num_coils, uint16_t num_discrete_inputs, uint16_t num_holding_registers, uint16_t num_input_registers)</td></tr>
 <tr class="separator:a0265406efea9cf22a481b867bcec06f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcb2c7bb90fd97a74cfd6d0572d3c3ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="prelude_8h.html#afba562878a3535479ef88914e89ee38b">Channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#abcb2c7bb90fd97a74cfd6d0572d3c3ec">create_tcp_client</a> (<a class="el" href="prelude_8h.html#a26be402b6358a7159963c58bfcd5819f">Runtime</a> *runtime, const char *address, uint16_t max_queued_requests)</td></tr>
@@ -216,6 +218,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ace9b66ac23c961204362dbe48598f7b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#ace9b66ac23c961204362dbe48598f7b4">destroy_runtime</a> (<a class="el" href="prelude_8h.html#a26be402b6358a7159963c58bfcd5819f">Runtime</a> *runtime)</td></tr>
 <tr class="memdesc:ace9b66ac23c961204362dbe48598f7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a previously created runtime instance.  <a href="#ace9b66ac23c961204362dbe48598f7b4">More...</a><br /></td></tr>
 <tr class="separator:ace9b66ac23c961204362dbe48598f7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad33724585794192d9866c988a1ea5835"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#ad33724585794192d9866c988a1ea5835">destroy_server</a> (<a class="el" href="rodbus_8h.html#a2a4d68429aebf64b1a0686d32a333787">ServerHandle</a> *handle)</td></tr>
+<tr class="separator:ad33724585794192d9866c988a1ea5835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab85931f5288323e2dce1f7bf7c73b459"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#ab85931f5288323e2dce1f7bf7c73b459">read_coils</a> (<a class="el" href="struct_session.html">Session</a> *session, uint16_t start, uint16_t count, bool *output)</td></tr>
 <tr class="memdesc:ab85931f5288323e2dce1f7bf7c73b459"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform a blocking operation to read coils  <a href="#ab85931f5288323e2dce1f7bf7c73b459">More...</a><br /></td></tr>
 <tr class="separator:ab85931f5288323e2dce1f7bf7c73b459"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -420,6 +424,20 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Optional non-default configuration of the Tokio runtime. </p>
+
+</div>
+</div>
+<a id="a2a4d68429aebf64b1a0686d32a333787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a4d68429aebf64b1a0686d32a333787">&#9670;&nbsp;</a></span>ServerHandle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="rodbus_8h.html#a2a4d68429aebf64b1a0686d32a333787">ServerHandle</a> <a class="el" href="rodbus_8h.html#a2a4d68429aebf64b1a0686d32a333787">ServerHandle</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -784,14 +802,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a543be001101bbaf6a2c028db5fd61210"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a543be001101bbaf6a2c028db5fd61210">&#9670;&nbsp;</a></span>create_server()</h2>
+<a id="aea9f8ed2895405a6a928d19056bf4561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea9f8ed2895405a6a928d19056bf4561">&#9670;&nbsp;</a></span>create_server()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool create_server </td>
+          <td class="memname"><a class="el" href="rodbus_8h.html#a2a4d68429aebf64b1a0686d32a333787">ServerHandle</a>* create_server </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="prelude_8h.html#a26be402b6358a7159963c58bfcd5819f">Runtime</a> *&#160;</td>
           <td class="paramname"><em>runtime</em>, </td>
@@ -1010,6 +1028,24 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function checks for NULL and is a NOP in this case </dd></dl>
+
+</div>
+</div>
+<a id="ad33724585794192d9866c988a1ea5835"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad33724585794192d9866c988a1ea5835">&#9670;&nbsp;</a></span>destroy_server()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void destroy_server </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rodbus_8h.html#a2a4d68429aebf64b1a0686d32a333787">ServerHandle</a> *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

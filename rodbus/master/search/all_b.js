@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['serverhandle',['ServerHandle',['../rodbus_8h.html#a2a4d68429aebf64b1a0686d32a333787',1,'rodbus.h']]],
   ['session',['Session',['../struct_session.html',1,'Session'],['../rodbus_8h.html#a8f1b89c3102156804ef750df9ac42d97',1,'Session():&#160;rodbus.h']]],
   ['set_5flog_5fcallback',['set_log_callback',['../rodbus_8h.html#aff217ee71ce2c9bf91632d0d20ae2946',1,'rodbus.h']]],
   ['set_5fmax_5flevel',['set_max_level',['../rodbus_8h.html#ab05981f1ce26c086993a77fd70eec230',1,'rodbus.h']]],

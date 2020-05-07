@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['update_5fcoil',['update_coil',['../rodbus_8h.html#ab1b26e9a50ae594fdda800c97d77ec01',1,'rodbus.h']]],
-  ['update_5fhandler',['update_handler',['../rodbus_8h.html#ac6be375f7f5f2f62923f0c931de5b241',1,'rodbus.h']]]
+  ['set_5flog_5fcallback',['set_log_callback',['../rodbus_8h.html#aff217ee71ce2c9bf91632d0d20ae2946',1,'rodbus.h']]],
+  ['set_5fmax_5flevel',['set_max_level',['../rodbus_8h.html#ab05981f1ce26c086993a77fd70eec230',1,'rodbus.h']]]
 ];

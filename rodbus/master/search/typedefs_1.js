@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['exception',['Exception',['../rodbus_8h.html#adac335ec9f22fdaa8e18ca2d8130d90a',1,'rodbus.h']]]
+  ['callbacks',['Callbacks',['../rodbus_8h.html#a6776934484c8b4f38d405e630af94738',1,'rodbus.h']]],
+  ['channel',['Channel',['../prelude_8h.html#afba562878a3535479ef88914e89ee38b',1,'prelude.h']]]
 ];

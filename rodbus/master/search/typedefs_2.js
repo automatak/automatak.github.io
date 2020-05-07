@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handler',['Handler',['../rodbus_8h.html#a7e7f3245e13691d73f52c0b7caf580f3',1,'rodbus.h']]]
+  ['exception',['Exception',['../rodbus_8h.html#adac335ec9f22fdaa8e18ca2d8130d90a',1,'rodbus.h']]]
 ];

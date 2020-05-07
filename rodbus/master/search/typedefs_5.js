@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['serverhandle',['ServerHandle',['../rodbus_8h.html#a2a4d68429aebf64b1a0686d32a333787',1,'rodbus.h']]],
-  ['session',['Session',['../rodbus_8h.html#a8f1b89c3102156804ef750df9ac42d97',1,'rodbus.h']]],
-  ['sizes',['Sizes',['../rodbus_8h.html#afc210d6f5ce14c41ad562ef100ac3532',1,'rodbus.h']]],
-  ['status',['Status',['../rodbus_8h.html#af4f792ad9fd33e21293f4305ac9951cb',1,'rodbus.h']]]
+  ['registeriterator',['RegisterIterator',['../rodbus_8h.html#a1479d7a4be4e0a3ed7c0656724dc1dd0',1,'rodbus.h']]],
+  ['result',['Result',['../rodbus_8h.html#ae49525aea41578e35d3e8fa40032fff9',1,'rodbus.h']]],
+  ['runtime',['Runtime',['../prelude_8h.html#a26be402b6358a7159963c58bfcd5819f',1,'prelude.h']]],
+  ['runtimeconfig',['RuntimeConfig',['../rodbus_8h.html#a313c85f25e6379ee8b06fd7af42e5f26',1,'rodbus.h']]]
 ];

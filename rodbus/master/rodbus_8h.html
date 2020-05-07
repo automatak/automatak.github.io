@@ -117,8 +117,12 @@ Typedefs</h2></td></tr>
 <tr class="separator:a108f283de9b3b197e8cf1f6b2646c12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4f792ad9fd33e21293f4305ac9951cb"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#af4f792ad9fd33e21293f4305ac9951cb">Status</a></td></tr>
 <tr class="separator:af4f792ad9fd33e21293f4305ac9951cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab53c4c86b8df187b3535456771fa8681"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="rodbus_8h.html#ab53c4c86b8df187b3535456771fa8681">BitIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#ab53c4c86b8df187b3535456771fa8681">BitIterator</a></td></tr>
+<tr class="separator:ab53c4c86b8df187b3535456771fa8681"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e7f3245e13691d73f52c0b7caf580f3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="rodbus_8h.html#a7e7f3245e13691d73f52c0b7caf580f3">Handler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a7e7f3245e13691d73f52c0b7caf580f3">Handler</a></td></tr>
 <tr class="separator:a7e7f3245e13691d73f52c0b7caf580f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1479d7a4be4e0a3ed7c0656724dc1dd0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="rodbus_8h.html#a1479d7a4be4e0a3ed7c0656724dc1dd0">RegisterIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a1479d7a4be4e0a3ed7c0656724dc1dd0">RegisterIterator</a></td></tr>
+<tr class="separator:a1479d7a4be4e0a3ed7c0656724dc1dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a4d68429aebf64b1a0686d32a333787"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="rodbus_8h.html#a2a4d68429aebf64b1a0686d32a333787">ServerHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a2a4d68429aebf64b1a0686d32a333787">ServerHandle</a></td></tr>
 <tr class="separator:a2a4d68429aebf64b1a0686d32a333787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a993c841f36546f091efb45eb10bdeb65"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="rodbus_8h.html#a993c841f36546f091efb45eb10bdeb65">Updater</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a993c841f36546f091efb45eb10bdeb65">Updater</a></td></tr>
@@ -220,30 +224,36 @@ Functions</h2></td></tr>
 <tr class="separator:ace9b66ac23c961204362dbe48598f7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad33724585794192d9866c988a1ea5835"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#ad33724585794192d9866c988a1ea5835">destroy_server</a> (<a class="el" href="rodbus_8h.html#a2a4d68429aebf64b1a0686d32a333787">ServerHandle</a> *handle)</td></tr>
 <tr class="separator:ad33724585794192d9866c988a1ea5835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89467479f2356b5694d5294ea68ccdcf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a89467479f2356b5694d5294ea68ccdcf">get_next_bit</a> (<a class="el" href="rodbus_8h.html#ab53c4c86b8df187b3535456771fa8681">BitIterator</a> *iterator, bool *value, uint16_t *index)</td></tr>
+<tr class="memdesc:a89467479f2356b5694d5294ea68ccdcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the next bit and/or index from iterator  <a href="#a89467479f2356b5694d5294ea68ccdcf">More...</a><br /></td></tr>
+<tr class="separator:a89467479f2356b5694d5294ea68ccdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcbc9b6b65ddad049cd64b4b7ec96a2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#abcbc9b6b65ddad049cd64b4b7ec96a2f">get_next_register</a> (<a class="el" href="rodbus_8h.html#a1479d7a4be4e0a3ed7c0656724dc1dd0">RegisterIterator</a> *iterator, uint16_t *value, uint16_t *index)</td></tr>
+<tr class="memdesc:abcbc9b6b65ddad049cd64b4b7ec96a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the next register value and/or index from iterator  <a href="#abcbc9b6b65ddad049cd64b4b7ec96a2f">More...</a><br /></td></tr>
+<tr class="separator:abcbc9b6b65ddad049cd64b4b7ec96a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab85931f5288323e2dce1f7bf7c73b459"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#ab85931f5288323e2dce1f7bf7c73b459">read_coils</a> (<a class="el" href="struct_session.html">Session</a> *session, uint16_t start, uint16_t count, bool *output)</td></tr>
 <tr class="memdesc:ab85931f5288323e2dce1f7bf7c73b459"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform a blocking operation to read coils  <a href="#ab85931f5288323e2dce1f7bf7c73b459">More...</a><br /></td></tr>
 <tr class="separator:ab85931f5288323e2dce1f7bf7c73b459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9578633841e0d4b205f8b679fc5fd9c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a9578633841e0d4b205f8b679fc5fd9c3">read_coils_cb</a> (<a class="el" href="struct_session.html">Session</a> *session, uint16_t start, uint16_t count, void(*callback)(<a class="el" href="struct_result.html">Result</a>, const bool *, uint16_t, void *), void *user_data)</td></tr>
-<tr class="memdesc:a9578633841e0d4b205f8b679fc5fd9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform a non-blocking operation to read coils  <a href="#a9578633841e0d4b205f8b679fc5fd9c3">More...</a><br /></td></tr>
-<tr class="separator:a9578633841e0d4b205f8b679fc5fd9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd307d999611d65b5f2686497d6eae8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a9cd307d999611d65b5f2686497d6eae8">read_coils_cb</a> (<a class="el" href="struct_session.html">Session</a> *session, uint16_t start, uint16_t count, void(*callback)(<a class="el" href="struct_result.html">Result</a>, <a class="el" href="rodbus_8h.html#ab53c4c86b8df187b3535456771fa8681">BitIterator</a> *, void *), void *user_data)</td></tr>
+<tr class="memdesc:a9cd307d999611d65b5f2686497d6eae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform a non-blocking operation to read coils  <a href="#a9cd307d999611d65b5f2686497d6eae8">More...</a><br /></td></tr>
+<tr class="separator:a9cd307d999611d65b5f2686497d6eae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad42687e7ef453700b1f8160e8e5da715"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#ad42687e7ef453700b1f8160e8e5da715">read_discrete_inputs</a> (<a class="el" href="struct_session.html">Session</a> *session, uint16_t start, uint16_t count, bool *output)</td></tr>
 <tr class="memdesc:ad42687e7ef453700b1f8160e8e5da715"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform a blocking operation to read discrete inputs  <a href="#ad42687e7ef453700b1f8160e8e5da715">More...</a><br /></td></tr>
 <tr class="separator:ad42687e7ef453700b1f8160e8e5da715"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2bd608a4d3d314e4b5137d32b0865e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#ac2bd608a4d3d314e4b5137d32b0865e3">read_discrete_inputs_cb</a> (<a class="el" href="struct_session.html">Session</a> *session, uint16_t start, uint16_t count, void(*callback)(<a class="el" href="struct_result.html">Result</a>, const bool *, uint16_t, void *), void *user_data)</td></tr>
-<tr class="memdesc:ac2bd608a4d3d314e4b5137d32b0865e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform a non-blocking operation to read discrete inputs  <a href="#ac2bd608a4d3d314e4b5137d32b0865e3">More...</a><br /></td></tr>
-<tr class="separator:ac2bd608a4d3d314e4b5137d32b0865e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1876b80071bc7902d2d86524c0abb6ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a1876b80071bc7902d2d86524c0abb6ca">read_discrete_inputs_cb</a> (<a class="el" href="struct_session.html">Session</a> *session, uint16_t start, uint16_t count, void(*callback)(<a class="el" href="struct_result.html">Result</a>, <a class="el" href="rodbus_8h.html#ab53c4c86b8df187b3535456771fa8681">BitIterator</a> *, void *), void *user_data)</td></tr>
+<tr class="memdesc:a1876b80071bc7902d2d86524c0abb6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform a non-blocking operation to read discrete inputs  <a href="#a1876b80071bc7902d2d86524c0abb6ca">More...</a><br /></td></tr>
+<tr class="separator:a1876b80071bc7902d2d86524c0abb6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd934150a7b2bb07bac2c61112af5849"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#afd934150a7b2bb07bac2c61112af5849">read_holding_registers</a> (<a class="el" href="struct_session.html">Session</a> *session, uint16_t start, uint16_t count, uint16_t *output)</td></tr>
 <tr class="memdesc:afd934150a7b2bb07bac2c61112af5849"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform a blocking operation to read holding registers  <a href="#afd934150a7b2bb07bac2c61112af5849">More...</a><br /></td></tr>
 <tr class="separator:afd934150a7b2bb07bac2c61112af5849"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49e19735fa287de1fb95f580c4810532"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a49e19735fa287de1fb95f580c4810532">read_holding_registers_cb</a> (<a class="el" href="struct_session.html">Session</a> *session, uint16_t start, uint16_t count, void(*callback)(<a class="el" href="struct_result.html">Result</a>, const uint16_t *, uint16_t, void *), void *user_data)</td></tr>
-<tr class="memdesc:a49e19735fa287de1fb95f580c4810532"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform a non-blocking operation to read holding registers  <a href="#a49e19735fa287de1fb95f580c4810532">More...</a><br /></td></tr>
-<tr class="separator:a49e19735fa287de1fb95f580c4810532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3538834f113b232e5d5c857cb1d00e6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a3538834f113b232e5d5c857cb1d00e6c">read_holding_registers_cb</a> (<a class="el" href="struct_session.html">Session</a> *session, uint16_t start, uint16_t count, void(*callback)(<a class="el" href="struct_result.html">Result</a>, <a class="el" href="rodbus_8h.html#a1479d7a4be4e0a3ed7c0656724dc1dd0">RegisterIterator</a> *, void *), void *user_data)</td></tr>
+<tr class="memdesc:a3538834f113b232e5d5c857cb1d00e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform a non-blocking operation to read holding registers  <a href="#a3538834f113b232e5d5c857cb1d00e6c">More...</a><br /></td></tr>
+<tr class="separator:a3538834f113b232e5d5c857cb1d00e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa55eb307453cc992b2806faa9bcd944e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#aa55eb307453cc992b2806faa9bcd944e">read_input_registers</a> (<a class="el" href="struct_session.html">Session</a> *session, uint16_t start, uint16_t count, uint16_t *output)</td></tr>
 <tr class="memdesc:aa55eb307453cc992b2806faa9bcd944e"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform a blocking operation to read input registers  <a href="#aa55eb307453cc992b2806faa9bcd944e">More...</a><br /></td></tr>
 <tr class="separator:aa55eb307453cc992b2806faa9bcd944e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afda5ecba92c019e4a458ec80db3387b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#afda5ecba92c019e4a458ec80db3387b8">read_input_registers_cb</a> (<a class="el" href="struct_session.html">Session</a> *session, uint16_t start, uint16_t count, void(*callback)(<a class="el" href="struct_result.html">Result</a>, const uint16_t *, uint16_t, void *), void *user_data)</td></tr>
-<tr class="memdesc:afda5ecba92c019e4a458ec80db3387b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform a non-blocking operation to read input registers  <a href="#afda5ecba92c019e4a458ec80db3387b8">More...</a><br /></td></tr>
-<tr class="separator:afda5ecba92c019e4a458ec80db3387b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe98413a265f083e44c807adb3e77e97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#afe98413a265f083e44c807adb3e77e97">read_input_registers_cb</a> (<a class="el" href="struct_session.html">Session</a> *session, uint16_t start, uint16_t count, void(*callback)(<a class="el" href="struct_result.html">Result</a>, <a class="el" href="rodbus_8h.html#a1479d7a4be4e0a3ed7c0656724dc1dd0">RegisterIterator</a> *, void *), void *user_data)</td></tr>
+<tr class="memdesc:afe98413a265f083e44c807adb3e77e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform a non-blocking operation to read input registers  <a href="#afe98413a265f083e44c807adb3e77e97">More...</a><br /></td></tr>
+<tr class="separator:afe98413a265f083e44c807adb3e77e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ddc031e0c4afc244666f0b60940c8c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a1ddc031e0c4afc244666f0b60940c8c0">release_updater</a> (<a class="el" href="rodbus_8h.html#a993c841f36546f091efb45eb10bdeb65">Updater</a> *updater)</td></tr>
 <tr class="separator:a1ddc031e0c4afc244666f0b60940c8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff217ee71ce2c9bf91632d0d20ae2946"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#aff217ee71ce2c9bf91632d0d20ae2946">set_log_callback</a> (void(*callback)(<a class="el" href="rodbus_8h.html#a221b779e6bb7b8d40677d7642bfefac5">Level</a> level, const char *message))</td></tr>
@@ -343,6 +353,20 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="ab53c4c86b8df187b3535456771fa8681"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab53c4c86b8df187b3535456771fa8681">&#9670;&nbsp;</a></span>BitIterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="rodbus_8h.html#ab53c4c86b8df187b3535456771fa8681">BitIterator</a> <a class="el" href="rodbus_8h.html#ab53c4c86b8df187b3535456771fa8681">BitIterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6776934484c8b4f38d405e630af94738"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6776934484c8b4f38d405e630af94738">&#9670;&nbsp;</a></span>Callbacks</h2>
 
@@ -393,6 +417,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef uint8_t <a class="el" href="rodbus_8h.html#a221b779e6bb7b8d40677d7642bfefac5">Level</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1479d7a4be4e0a3ed7c0656724dc1dd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1479d7a4be4e0a3ed7c0656724dc1dd0">&#9670;&nbsp;</a></span>RegisterIterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="rodbus_8h.html#a1479d7a4be4e0a3ed7c0656724dc1dd0">RegisterIterator</a> <a class="el" href="rodbus_8h.html#a1479d7a4be4e0a3ed7c0656724dc1dd0">RegisterIterator</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1053,6 +1091,96 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a89467479f2356b5694d5294ea68ccdcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89467479f2356b5694d5294ea68ccdcf">&#9670;&nbsp;</a></span>get_next_bit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool get_next_bit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rodbus_8h.html#ab53c4c86b8df187b3535456771fa8681">BitIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieve the next bit and/or index from iterator </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pointer</td><td>to the iterator </td></tr>
+    <tr><td class="paramname">pointer</td><td>to the value to write (output param) </td></tr>
+    <tr><td class="paramname">pointer</td><td>to the value to write (output param) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the iterator is non-null and it contained another value </dd></dl>
+
+</div>
+</div>
+<a id="abcbc9b6b65ddad049cd64b4b7ec96a2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcbc9b6b65ddad049cd64b4b7ec96a2f">&#9670;&nbsp;</a></span>get_next_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool get_next_register </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rodbus_8h.html#a1479d7a4be4e0a3ed7c0656724dc1dd0">RegisterIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieve the next register value and/or index from iterator </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pointer</td><td>to the iterator </td></tr>
+    <tr><td class="paramname">pointer</td><td>to the value to write (output param) </td></tr>
+    <tr><td class="paramname">pointer</td><td>to the value to write (output param) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the iterator is non-null and it contained another value </dd></dl>
+
+</div>
+</div>
 <a id="ab85931f5288323e2dce1f7bf7c73b459"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab85931f5288323e2dce1f7bf7c73b459">&#9670;&nbsp;</a></span>read_coils()</h2>
 
@@ -1107,8 +1235,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9578633841e0d4b205f8b679fc5fd9c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9578633841e0d4b205f8b679fc5fd9c3">&#9670;&nbsp;</a></span>read_coils_cb()</h2>
+<a id="a9cd307d999611d65b5f2686497d6eae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cd307d999611d65b5f2686497d6eae8">&#9670;&nbsp;</a></span>read_coils_cb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1134,7 +1262,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="struct_result.html">Result</a>, const bool *, uint16_t, void *)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="struct_result.html">Result</a>, <a class="el" href="rodbus_8h.html#ab53c4c86b8df187b3535456771fa8681">BitIterator</a> *, void *)&#160;</td>
           <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
@@ -1220,8 +1348,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac2bd608a4d3d314e4b5137d32b0865e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2bd608a4d3d314e4b5137d32b0865e3">&#9670;&nbsp;</a></span>read_discrete_inputs_cb()</h2>
+<a id="a1876b80071bc7902d2d86524c0abb6ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1876b80071bc7902d2d86524c0abb6ca">&#9670;&nbsp;</a></span>read_discrete_inputs_cb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1247,7 +1375,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="struct_result.html">Result</a>, const bool *, uint16_t, void *)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="struct_result.html">Result</a>, <a class="el" href="rodbus_8h.html#ab53c4c86b8df187b3535456771fa8681">BitIterator</a> *, void *)&#160;</td>
           <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
@@ -1333,8 +1461,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a49e19735fa287de1fb95f580c4810532"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49e19735fa287de1fb95f580c4810532">&#9670;&nbsp;</a></span>read_holding_registers_cb()</h2>
+<a id="a3538834f113b232e5d5c857cb1d00e6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3538834f113b232e5d5c857cb1d00e6c">&#9670;&nbsp;</a></span>read_holding_registers_cb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1360,7 +1488,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="struct_result.html">Result</a>, const uint16_t *, uint16_t, void *)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="struct_result.html">Result</a>, <a class="el" href="rodbus_8h.html#a1479d7a4be4e0a3ed7c0656724dc1dd0">RegisterIterator</a> *, void *)&#160;</td>
           <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
@@ -1446,8 +1574,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afda5ecba92c019e4a458ec80db3387b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afda5ecba92c019e4a458ec80db3387b8">&#9670;&nbsp;</a></span>read_input_registers_cb()</h2>
+<a id="afe98413a265f083e44c807adb3e77e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe98413a265f083e44c807adb3e77e97">&#9670;&nbsp;</a></span>read_input_registers_cb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1473,7 +1601,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="struct_result.html">Result</a>, const uint16_t *, uint16_t, void *)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="struct_result.html">Result</a>, <a class="el" href="rodbus_8h.html#a1479d7a4be4e0a3ed7c0656724dc1dd0">RegisterIterator</a> *, void *)&#160;</td>
           <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>

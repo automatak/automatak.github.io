@@ -94,6 +94,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_runtime_config.html">RuntimeConfig</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional non-default configuration of the Tokio runtime.  <a href="struct_runtime_config.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_bit.html">Bit</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_register.html">Register</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_result.html">Result</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type that describes the success or failure of an operation.  <a href="struct_result.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +149,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a313c85f25e6379ee8b06fd7af42e5f26"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_runtime_config.html">RuntimeConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a313c85f25e6379ee8b06fd7af42e5f26">RuntimeConfig</a></td></tr>
 <tr class="memdesc:a313c85f25e6379ee8b06fd7af42e5f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional non-default configuration of the Tokio runtime.  <a href="#a313c85f25e6379ee8b06fd7af42e5f26">More...</a><br /></td></tr>
 <tr class="separator:a313c85f25e6379ee8b06fd7af42e5f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564a2b5f817ef66f882808d754ef5038"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_bit.html">Bit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a564a2b5f817ef66f882808d754ef5038">Bit</a></td></tr>
+<tr class="separator:a564a2b5f817ef66f882808d754ef5038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252d8d6053be923f0782b63cdf9c81a6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_register.html">Register</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a252d8d6053be923f0782b63cdf9c81a6">Register</a></td></tr>
+<tr class="separator:a252d8d6053be923f0782b63cdf9c81a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae49525aea41578e35d3e8fa40032fff9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#ae49525aea41578e35d3e8fa40032fff9">Result</a></td></tr>
 <tr class="memdesc:ae49525aea41578e35d3e8fa40032fff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type that describes the success or failure of an operation.  <a href="#ae49525aea41578e35d3e8fa40032fff9">More...</a><br /></td></tr>
 <tr class="separator:ae49525aea41578e35d3e8fa40032fff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,12 +232,12 @@ Functions</h2></td></tr>
 <tr class="separator:ace9b66ac23c961204362dbe48598f7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad33724585794192d9866c988a1ea5835"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#ad33724585794192d9866c988a1ea5835">destroy_server</a> (<a class="el" href="rodbus_8h.html#a2a4d68429aebf64b1a0686d32a333787">ServerHandle</a> *handle)</td></tr>
 <tr class="separator:ad33724585794192d9866c988a1ea5835"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89467479f2356b5694d5294ea68ccdcf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a89467479f2356b5694d5294ea68ccdcf">get_next_bit</a> (<a class="el" href="rodbus_8h.html#ab53c4c86b8df187b3535456771fa8681">BitIterator</a> *iterator, bool *value, uint16_t *index)</td></tr>
-<tr class="memdesc:a89467479f2356b5694d5294ea68ccdcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the next bit and/or index from iterator  <a href="#a89467479f2356b5694d5294ea68ccdcf">More...</a><br /></td></tr>
-<tr class="separator:a89467479f2356b5694d5294ea68ccdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcbc9b6b65ddad049cd64b4b7ec96a2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#abcbc9b6b65ddad049cd64b4b7ec96a2f">get_next_register</a> (<a class="el" href="rodbus_8h.html#a1479d7a4be4e0a3ed7c0656724dc1dd0">RegisterIterator</a> *iterator, uint16_t *value, uint16_t *index)</td></tr>
-<tr class="memdesc:abcbc9b6b65ddad049cd64b4b7ec96a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the next register value and/or index from iterator  <a href="#abcbc9b6b65ddad049cd64b4b7ec96a2f">More...</a><br /></td></tr>
-<tr class="separator:abcbc9b6b65ddad049cd64b4b7ec96a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b1652ea8cefd457cb6e0e560d4b9198"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#a8b1652ea8cefd457cb6e0e560d4b9198">get_next_bit</a> (<a class="el" href="rodbus_8h.html#ab53c4c86b8df187b3535456771fa8681">BitIterator</a> *iterator, <a class="el" href="struct_bit.html">Bit</a> *value)</td></tr>
+<tr class="memdesc:a8b1652ea8cefd457cb6e0e560d4b9198"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the next bit and/or index from iterator  <a href="#a8b1652ea8cefd457cb6e0e560d4b9198">More...</a><br /></td></tr>
+<tr class="separator:a8b1652ea8cefd457cb6e0e560d4b9198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf92a9ed4be785da8349e9a8f41646e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#afbf92a9ed4be785da8349e9a8f41646e">get_next_register</a> (<a class="el" href="rodbus_8h.html#a1479d7a4be4e0a3ed7c0656724dc1dd0">RegisterIterator</a> *iterator, <a class="el" href="struct_register.html">Register</a> *value)</td></tr>
+<tr class="memdesc:afbf92a9ed4be785da8349e9a8f41646e"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the next register value and/or index from iterator  <a href="#afbf92a9ed4be785da8349e9a8f41646e">More...</a><br /></td></tr>
+<tr class="separator:afbf92a9ed4be785da8349e9a8f41646e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab85931f5288323e2dce1f7bf7c73b459"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rodbus_8h.html#ab85931f5288323e2dce1f7bf7c73b459">read_coils</a> (<a class="el" href="struct_session.html">Session</a> *session, uint16_t start, uint16_t count, bool *output)</td></tr>
 <tr class="memdesc:ab85931f5288323e2dce1f7bf7c73b459"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform a blocking operation to read coils  <a href="#ab85931f5288323e2dce1f7bf7c73b459">More...</a><br /></td></tr>
 <tr class="separator:ab85931f5288323e2dce1f7bf7c73b459"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -353,6 +361,20 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a564a2b5f817ef66f882808d754ef5038"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a564a2b5f817ef66f882808d754ef5038">&#9670;&nbsp;</a></span>Bit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_bit.html">Bit</a>  <a class="el" href="struct_bit.html">Bit</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab53c4c86b8df187b3535456771fa8681"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab53c4c86b8df187b3535456771fa8681">&#9670;&nbsp;</a></span>BitIterator</h2>
 
@@ -417,6 +439,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef uint8_t <a class="el" href="rodbus_8h.html#a221b779e6bb7b8d40677d7642bfefac5">Level</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a252d8d6053be923f0782b63cdf9c81a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a252d8d6053be923f0782b63cdf9c81a6">&#9670;&nbsp;</a></span>Register</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_register.html">Register</a>  <a class="el" href="struct_register.html">Register</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1091,8 +1127,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a89467479f2356b5694d5294ea68ccdcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89467479f2356b5694d5294ea68ccdcf">&#9670;&nbsp;</a></span>get_next_bit()</h2>
+<a id="a8b1652ea8cefd457cb6e0e560d4b9198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1652ea8cefd457cb6e0e560d4b9198">&#9670;&nbsp;</a></span>get_next_bit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1106,14 +1142,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>index</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_bit.html">Bit</a> *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1136,8 +1166,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abcbc9b6b65ddad049cd64b4b7ec96a2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcbc9b6b65ddad049cd64b4b7ec96a2f">&#9670;&nbsp;</a></span>get_next_register()</h2>
+<a id="afbf92a9ed4be785da8349e9a8f41646e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbf92a9ed4be785da8349e9a8f41646e">&#9670;&nbsp;</a></span>get_next_register()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1151,14 +1181,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>index</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_register.html">Register</a> *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

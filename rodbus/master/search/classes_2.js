@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['session',['Session',['../struct_session.html',1,'']]],
-  ['sizes',['Sizes',['../struct_sizes.html',1,'']]]
+  ['register',['Register',['../struct_register.html',1,'']]],
+  ['result',['Result',['../struct_result.html',1,'']]],
+  ['runtimeconfig',['RuntimeConfig',['../struct_runtime_config.html',1,'']]]
 ];

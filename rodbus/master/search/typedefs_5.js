@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['register',['Register',['../rodbus_8h.html#a252d8d6053be923f0782b63cdf9c81a6',1,'rodbus.h']]],
   ['registeriterator',['RegisterIterator',['../rodbus_8h.html#a1479d7a4be4e0a3ed7c0656724dc1dd0',1,'rodbus.h']]],
   ['result',['Result',['../rodbus_8h.html#ae49525aea41578e35d3e8fa40032fff9',1,'rodbus.h']]],
   ['runtime',['Runtime',['../prelude_8h.html#a26be402b6358a7159963c58bfcd5819f',1,'prelude.h']]],

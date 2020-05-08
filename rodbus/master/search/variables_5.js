@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['timeout_5fms',['timeout_ms',['../struct_session.html#a023adba95d735777f6a6b24ce8737c94',1,'Session']]]
+  ['status',['status',['../struct_result.html#ac43ee844dd08ab17e524f9ba77e3bf21',1,'Result']]]
 ];
